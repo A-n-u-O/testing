@@ -1,0 +1,129 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER CONTAINER START */
+
+#header{
+    background-image: url(../image/header-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    opacity: 1;
+    background-blend-mode:lighten;
+
+}
+.header-container{
+    padding: 20px;
+}
+.header-container .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(237, 237, 237);
+    border: 8px solid #2590f4;
+    padding: 40px 30px;
+}
+
+
+.header-container .container *{
+    margin: 10px 0px;
+}
+
+
+.header-container .container .btn a{
+    border: 0;
+    outline: none;
+    background-color: #2590f4;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ABOUT CONTAINER START */
+#about-container{
+  padding: 20px;
+}
+
+#about-container .container{
+    display: flex;
+    flex-direction: column-reverse;
+
+
+}
+
+#about-container .container > div{
+   margin: 20px 0px;
+   padding: 0px 30px;
+
+}
+
+
+ .container .about-content,  .container .about-icons ,   .container .about-icons .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+  .container .about-icons .box-icon{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    background-color: #2590f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+ .container .about-icons .box-icon img{
+    width: 80px;
+    height: 80px;
+    align-self: center;
+
+
+ }
+
+ @media screen and (max-width: 767px) {
+    /* body{
+        background-color: black;
+    } */
+    
+ }
+
+
+ @media screen and (min-width: 768px) {
+     .container .about-icons .box{
+        flex-direction: row;
+        justify-content: space-between;
+        
+
+      
+     }
+
+     .container .about-icons .box div.box-icon{
+        flex-basis: 0%;
+     }
+     .container .about-icons .box div.box-content{
+        flex-basis: 75%;
+        text-align: left;
+     }
+ }
+
+  @media screen and (min-width: 1024px) {
+        .container .about-icons .box div.box-content{
+        flex-basis: 85%;
+     
+     }
+  }
